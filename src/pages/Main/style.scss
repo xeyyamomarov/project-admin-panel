@@ -1,0 +1,36 @@
+#main {
+  height: 100vh;
+  background-color: rgb(255, 97, 97);
+  display: flex;
+
+  & > .rigth-side {
+    background-color: rgb(255, 255, 255);
+    flex-grow: 1;
+
+    & > .main-header {
+        height: 6.7rem;
+        padding: 0 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+        h3{
+          font-size: 2rem;
+          margin: 0;
+          padding: 0;
+          line-height: 0;
+        }
+    }
+
+    & > .main-pages{
+      background-color: #e7e7e7;
+      height: calc(100% - 6.7rem);
+      padding: 0.5rem;
+
+      & > *{
+        height: calc(100% - 2rem);
+      }
+    }
+  }
+}
